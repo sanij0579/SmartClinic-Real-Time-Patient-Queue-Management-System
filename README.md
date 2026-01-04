@@ -26,9 +26,9 @@ This project solves the problem using a **real-time queue tracking system** wher
 ### 📱 Patient Mobile App
 
 <p align="center">
-  <img src="assests/screenshots/patient-home.png" width="30%" />
-  <img src="assests/screenshots/booking-confirmed.png" width="30%" />
-  <img src="assests/screenshots/queue-status.png" width="30%" />
+  <img src="assests/screenshorts/patient-home.png" width="30%" />
+  <img src="assests/screenshorts/booking-confirmed.png" width="30%" />
+  <img src="assests/screenshorts/queue-status.png" width="30%" />
 </p>
 
 ---
@@ -36,7 +36,7 @@ This project solves the problem using a **real-time queue tracking system** wher
 ### 🧑‍⚕️ Doctor Dashboard
 
 <p align="center">
-  <img src="assests/screenshots/doctor-dashboard.png" width="80%" />
+  <img src="assests/screenshorts/doctor-dashboard.png" width="80%" />
 </p>
 
 ---
@@ -44,13 +44,13 @@ This project solves the problem using a **real-time queue tracking system** wher
 ### 🏥 Real World Problem (Before vs After)
 
 <p align="center">
-  <img src="assests/screenshots/real-world-queue.jpg" width="45%" />
-  <img src="assests/screenshots/queue-status.png" width="45%" />
+  <img src="assests/screenshorts/real-world-queue.jpg" width="45%" />
+  <img src="assests/screenshorts/queue-status.png" width="45%" />
 </p>
 
 <p align="center">
   <b>Traditional Hospital Queue</b> ❌ &nbsp;&nbsp;vs&nbsp;&nbsp; <b>Smart Digital Queue</b> ✅
-    <img src="assests/screenshots/ortho.jpeg" width="45%" />
+    <img src="assests/screenshorts/ortho.jpeg" width="45%" />
 </p>
 
 ---
@@ -61,19 +61,19 @@ This project solves the problem using a **real-time queue tracking system** wher
 - Remote registration  
 - Live token & ETA tracking  
 - Push / real-time updates
--   <img src="assests/screenshots/UI.jpeg" width="45%" /> 
+-   <img src="assests/screenshorts/UI.jpeg" width="45%" /> 
 
 ### 2️⃣ Doctor Dashboard (React.js)
 - Queue control (Next, Skip, Complete)  
 - Live patient list  
 - Status analytics
--   <img src="assests/screenshots/status.jpeg" width="45%" /> 
+-   <img src="assests/screenshorts/status.jpeg" width="45%" /> 
 
 ### 3️⃣ Backend (Django REST Framework)
 - Authentication (Patients & Doctors)  
 - Token & queue management logic  
 - Secure APIs
--   <img src="assests/screenshots/register.jpeg" width="45%" />
+-   <img src="assests/screenshorts/register.jpeg" width="45%" />
 
 ### 4️⃣ Real-Time Layer
 - WebSockets (Django Channels)  
