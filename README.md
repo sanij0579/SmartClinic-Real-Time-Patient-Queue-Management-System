@@ -1,206 +1,197 @@
 # 🩺 Real-Time Patient Queue Management System
 
-A modern, scalable, and real-time digital solution to replace physical queues in hospitals, clinics, and any service centers — built using **Django REST Framework**, **React Native**, **React.js**, and **WebSockets**.
+A modern, scalable, and real-time digital solution to replace physical queues in hospitals, clinics, and service centers — built using **Django REST Framework**, **React Native**, **React.js**, and **WebSockets**.
 
 ---
 
 ## 🚀 Overview
 
-Patients often wait for hours in hospitals without knowing their actual turn. This leads to:
+Patients often wait for hours in hospitals without knowing their actual turn, which leads to:
 
-* Stress & discomfort
-* Overcrowding
-* Repeated inquiries at reception
-* Bad patient experience
+- 😣 Stress & discomfort  
+- 👥 Overcrowding  
+- ❓ Repeated inquiries at reception  
+- ⭐ Poor patient experience  
 
 This project solves the problem using a **real-time queue tracking system** where:
 
-* Patients register remotely using a mobile app
-* Doctors manage the queue through a dashboard
-* Everyone receives real-time token updates
+- Patients register remotely using a mobile app  
+- Doctors manage the queue through a dashboard  
+- Everyone receives real-time token updates & ETA  
 
 ---
 
 ## 📸 Demo Screenshots
 
-> 🔽 Add your app/dashboard images here after uploading.
+### 📱 Patient Mobile App
+
+<p align="center">
+  <img src="assets/screenshots/patient-home.png" width="30%" />
+  <img src="assets/screenshots/booking-confirmed.png" width="30%" />
+  <img src="assets/screenshots/queue-status.png" width="30%" />
+</p>
 
 ---
 
-## 🏗️ Architecture
+### 🧑‍⚕️ Doctor Dashboard
 
-**1. Patient Mobile App (React Native)**
+<p align="center">
+  <img src="assets/screenshots/doctor-dashboard.png" width="80%" />
+</p>
 
-* Remote registration
-* Live token & ETA tracking
+---
 
-**2. Doctor Dashboard (React.js)**
+### 🏥 Real World Problem (Before vs After)
 
-* Queue control (Next, Skip, Complete)
-* Real-time patient list updates
+<p align="center">
+  <img src="assets/screenshots/real-world-queue.jpg" width="45%" />
+  <img src="assets/screenshots/queue-status.png" width="45%" />
+</p>
 
-**3. Backend (Django REST Framework)**
+<p align="center">
+  <b>Traditional Hospital Queue</b> ❌ &nbsp;&nbsp;vs&nbsp;&nbsp; <b>Smart Digital Queue</b> ✅
+</p>
 
-* Authentication (Patients + Doctors)
-* Queue & token management logic
-* Notification handling
+---
 
-**4. Real-Time Layer**
+## 🏗️ System Architecture
 
-* WebSockets / Push Notifications
+### 1️⃣ Patient Mobile App (React Native)
+- Remote registration  
+- Live token & ETA tracking  
+- Push / real-time updates  
 
-**5. Database**
+### 2️⃣ Doctor Dashboard (React.js)
+- Queue control (Next, Skip, Complete)  
+- Live patient list  
+- Status analytics  
 
-* PostgreSQL / SQLite3
+### 3️⃣ Backend (Django REST Framework)
+- Authentication (Patients & Doctors)  
+- Token & queue management logic  
+- Secure APIs  
+
+### 4️⃣ Real-Time Layer
+- WebSockets (Django Channels)  
+
+### 5️⃣ Database
+- PostgreSQL / SQLite3  
 
 ---
 
 ## 🔧 Tech Stack
 
-### **Frontend**
+### Frontend
+- React Native (Patient App)
+- React.js (Doctor Dashboard)
 
-* React Native (Patient App)
-* React.js (Doctor Dashboard)
+### Backend
+- Python
+- Django REST Framework
+- Django Channels
 
-### **Backend**
+### Database
+- PostgreSQL / SQLite3
 
-* Python, Django REST Framework
-* Django Channels (for real-time updates)
-
-### **Database**
-
-* PostgreSQL / SQLite3
-
-### **Notifications**
-
-* Push / SMS support (optional)
+### Notifications (Optional)
+- Push / SMS
 
 ---
 
-## ⭐ Features
+## ⭐ Key Features
 
-* ✔ Remote patient registration
-* ✔ Real-time token number & ETA
-* ✔ Multi-doctor / multi-clinic support
-* ✔ Admin dashboard with crowd heatmap
-* ✔ Accessibility mode for seniors
-* ✔ Push/SMS reminders
+- ✅ Remote patient registration  
+- ✅ Real-time token number & ETA  
+- ✅ Multi-doctor & multi-clinic support  
+- ✅ Doctor queue control dashboard  
+- ✅ Reduced physical waiting  
+- ✅ Scalable & modular architecture  
 
 ---
 
 ## 🛠️ Installation & Setup
 
-### 1️⃣ Clone the repository
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/sanij0579/Doctor-patient-Queue-app.git
 cd Doctor-patient-Queue-app
-```
+2️⃣ Backend Setup (Django):
 
-### 2️⃣ Backend Setup (Django)
-
-```bash
 cd backend
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
-```
+
 
 Backend will run at:
-
-```
 http://127.0.0.1:8000/
-```
 
-### 3️⃣ Mobile App Setup (React Native)
+3️⃣ Mobile App Setup (React Native)
 
-```bash
 cd mobile-app
 npm install
 npm start
-```
 
-Use Expo Go or emulator to run the app.
+4️⃣ Doctor Dashboard Setup (React.js)
 
-### 4️⃣ Doctor Dashboard Setup (React.js)
-
-```bash
 cd doctor-dashboard
 npm install
 npm start
-```
 
 Dashboard runs at:
-
-```
 http://localhost:3000/
-```
+
+📡 API Overview
+🔐 Authentication
+
+POST /api/register/ – Patient registration
+
+POST /api/login/ – Patient login
+
+POST /api/doctor/login/ – Doctor login
+
+🔄 Queue Management
+
+POST /api/queue/join/ – Take token
+
+GET /api/queue/current/ – Get current token
+
+POST /api/queue/next/ – Move to next patient
+
+POST /api/queue/skip/ – Skip patient
+
+
+
+📊 Impact & Benefits
+⬇ 40% reduction in physical waiting time
+
+⬇ 25% fewer reception inquiries
+
+⭐ Improved patient satisfaction
+
+🏥 Smoother hospital operations
+
+🔮 Future Enhancements
+🤖 AI-based wait time prediction
+
+🔊 Voice announcements (local languages)
+
+🧾 EMR / Hospital system integration
+
+👤 Role-based permissions
+
+📈 Advanced analytics & reports
+
+🤝 Contributing
+Contributions are welcome!
+Feel free to open issues, submit pull requests, or suggest improvements.
+
+📝 License
+This project is licensed under the MIT License.
+
+🎯 Goal
+To make healthcare faster, smarter, and more patient-friendly — one queue at a time.
 
 ---
 
-## 📡 API Overview
-
-### Authentication
-
-* `/api/register/` – Register patient
-* `/api/login/` – Login
-* `/api/doctor/login/` – Doctor login
-
-### Queue Management
-
-* `/api/queue/join/` – Take token
-* `/api/queue/current/` – Get current token
-* `/api/queue/next/` – Doctor proceeds next
-* `/api/queue/skip/` – Skip patient
-
----
-
-## 📂 Folder Structure (Recommended)
-
-```
-Doctor-patient-Queue-app/
-│
-├── backend/                # Django backend
-├── mobile-app/             # React Native App
-├── doctor-dashboard/       # React.js Dashboard
-├── README.md               # Project documentation
-└── LICENSE
-```
-
----
-
-## 📊 Expected Impact
-
-* ⬇ 40% reduction in physical waiting time
-* ⬇ 25% fewer reception inquiries
-* ⭐ Better patient experience
-* 📉 Reduced crowding
-* 🏥 Smooth hospital operations
-
----
-
-## 🔭 Future Enhancements
-
-* AI-based wait time prediction
-* Voice announcements in local languages
-* Integration with EMR/Hospital systems
-* Role-based permissions
-* Predictive analytics for crowd management
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to open issues and pull requests.
-
----
-
-## 📝 License
-
-This project is open-source and available under the **MIT License**.
-
----
-
-## 🎯 Goal
-
-**To make healthcare faster, smarter, and more patient-friendly — one queue at a time.**
