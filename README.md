@@ -1,4 +1,4 @@
-# 🩺 Real-Time Patient Queue Management System
+![booking-confirmed](https://github.com/user-attachments/assets/0e54beef-243a-474e-879b-70feb8f63f54)# 🩺 Real-Time Patient Queue Management System
 
 A modern, scalable, and real-time digital solution to replace physical queues in hospitals, clinics, and service centers — built using **Django REST Framework**, **React Native**, **React.js**, and **WebSockets**.
 
@@ -26,9 +26,9 @@ This project solves the problem using a **real-time queue tracking system** wher
 ### 📱 Patient Mobile App
 
 <p align="center">
-  <img src="assets/screenshots/patient-home.png" width="30%" />
-  <img src="assets/screenshots/booking-confirmed.png" width="30%" />
-  <img src="assets/screenshots/queue-status.png" width="30%" />
+  <img src="assests/screenshots/patient-home.png" width="30%" />
+  <img src="assests/screenshots/booking-confirmed.png" width="30%" />
+  <img src="assests/screenshots/queue-status.png" width="30%" />
 </p>
 
 ---
@@ -36,7 +36,7 @@ This project solves the problem using a **real-time queue tracking system** wher
 ### 🧑‍⚕️ Doctor Dashboard
 
 <p align="center">
-  <img src="assets/screenshots/doctor-dashboard.png" width="80%" />
+  <img src="assests/screenshots/doctor-dashboard.png" width="80%" />
 </p>
 
 ---
@@ -44,12 +44,13 @@ This project solves the problem using a **real-time queue tracking system** wher
 ### 🏥 Real World Problem (Before vs After)
 
 <p align="center">
-  <img src="assets/screenshots/real-world-queue.jpg" width="45%" />
-  <img src="assets/screenshots/queue-status.png" width="45%" />
+  <img src="assests/screenshots/real-world-queue.jpg" width="45%" />
+  <img src="assests/screenshots/queue-status.png" width="45%" />
 </p>
 
 <p align="center">
   <b>Traditional Hospital Queue</b> ❌ &nbsp;&nbsp;vs&nbsp;&nbsp; <b>Smart Digital Queue</b> ✅
+    <img src="assests/screenshots/ortho.jpeg" width="45%" />
 </p>
 
 ---
@@ -59,17 +60,20 @@ This project solves the problem using a **real-time queue tracking system** wher
 ### 1️⃣ Patient Mobile App (React Native)
 - Remote registration  
 - Live token & ETA tracking  
-- Push / real-time updates  
+- Push / real-time updates
+-   <img src="assests/screenshots/UI.jpeg" width="45%" /> 
 
 ### 2️⃣ Doctor Dashboard (React.js)
 - Queue control (Next, Skip, Complete)  
 - Live patient list  
-- Status analytics  
+- Status analytics
+-   <img src="assests/screenshots/status.jpeg" width="45%" /> 
 
 ### 3️⃣ Backend (Django REST Framework)
 - Authentication (Patients & Doctors)  
 - Token & queue management logic  
-- Secure APIs  
+- Secure APIs
+-   <img src="assests/screenshots/register.jpeg" width="45%" />
 
 ### 4️⃣ Real-Time Layer
 - WebSockets (Django Channels)  
