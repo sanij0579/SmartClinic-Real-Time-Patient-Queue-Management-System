@@ -1,4 +1,4 @@
-![booking-confirmed](https://github.com/user-attachments/assets/0e54beef-243a-474e-879b-70feb8f63f54)# 🩺 Real-Time Patient Queue Management System
+ 🩺 Real-Time Patient Queue Management System
 
 A modern, scalable, and real-time digital solution to replace physical queues in hospitals, clinics, and service centers — built using **Django REST Framework**, **React Native**, **React.js**, and **WebSockets**.
 
